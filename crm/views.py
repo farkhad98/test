@@ -18,4 +18,4 @@ def create_student(request):
     return redirect(reverse('index'))
 
 def delete_student(request):
-    student = Student()
+    students = Student.objects.all()
