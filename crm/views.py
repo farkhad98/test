@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render, reverse
-from academy.models import Student
+from academy.models import *
 
 def index(request):
     students = Student.objects.all()
@@ -17,5 +17,4 @@ def create_student(request):
         student.save()
     return redirect(reverse('index'))
 
-def delete_student(request):
-    students = Student.objects.all()
+
