@@ -1,8 +1,8 @@
 from django.db import models
 from django.shortcuts import reverse
 from django.utils import timezone
-from crm_project.academy.models import Student
-from crm_project.employees.models import Employee
+from crm_project.models.academy import Student
+from crm_project.models.employees import Employee
 from django.contrib.auth.models import User
 
 class TransactionCategory(models.Model):
